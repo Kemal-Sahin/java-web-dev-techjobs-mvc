@@ -28,6 +28,7 @@ public class JobData {
     /**
      * Fetch list of all job objects from loaded data,
      * without duplicates, then return a copy.
+     * @return
      */
 
     public static ArrayList<Job> findAll() {
@@ -36,7 +37,7 @@ public class JobData {
         loadData();
 
         // Bonus mission; normal version returns allJobs
-        return new ArrayList<>(allJobs);
+        return new ArrayList<Job>(allJobs);
     }
 
     /**
